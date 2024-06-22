@@ -1,12 +1,15 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "gestion_comercial";
+    //Conexion a la base de datos de Gestion_Comercial
+    $host = "localhost";
+    $db_user = "root";
+    $db_password = "";
+    $db_name = "gestion_comercial";
+    
+    //?Conexion con mysqli(Recomendado utilizar PDO ya que proporciona mayor seguridad)
+    $conn = new mysqli($host, $db_user, $db_password, $db_name);
 
-$conn = new mysqli($host, $user, $password, $database);
-
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
-?>
+    if ($conn->connect_error) {
+        die("Conexión fallida: " . $conn->connect_error);
+    }else{
+        echo "Conexión Exitosa!";
+    }
