@@ -20,7 +20,7 @@ Este proyecto es una herramienta de gestión comercial desarrollada utilizando H
 - **Base de Datos**: MySQL
 - **Navegador Web**: Cualquier navegador moderno
 
-## Instalación
+## Instalación y Configuración
 
 ### Paso 1: Configurar el Entorno
 
